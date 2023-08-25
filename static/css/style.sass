@@ -1,0 +1,220 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+p
+  word-wrap: break-word
+body
+  font-family: Hanuman, sans-serif
+  font-weight: 400
+.nav-bar
+  background: rgba(249, 125, 125, 0.15)
+nav
+  margin: 0 auto
+  width: 1440px
+.container
+  width: 1440px
+  margin: 0 auto
+.header
+  padding-bottom: 140px
+  .header-img
+    background-image: url(../img/main-img.png)
+    background-size: cover
+    background-repeat: no-repeat
+    width: 100%
+    height: 1023px
+    position: absolute
+    z-index: -1
+  .nav
+    display: flex
+    gap: 100px
+    padding: 30px 70px
+    ul
+      display: flex
+      gap: 60px
+      align-items: center
+      li
+        list-style-type: none
+        a
+          font-size: 20px
+          color: #EAEAEA
+          text-decoration: none
+          &:active
+            text-decoration: underline
+          &:visited
+            text-decoration: underline
+  .container
+    position: relative
+    margin-top: 255px
+    padding: 0 70px
+    display: flex
+    flex-direction: column
+    gap: 30px
+    img
+      width: 400px
+    .header-description
+      display: flex
+      flex-direction: column
+      gap: 5px
+      p
+        font-size: 32px
+        color: #EAEAEA
+    .header-btn
+      width: 400px
+      height: 60px
+      padding: 10px 0
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 20px
+      background: #0E6ECF
+      box-shadow: 2px 2px 20px 8px rgba(14, 110, 207, 0.35)
+      font-size: 20px
+      color: #EAEAEA
+      text-decoration: none
+      transition: transform 0.2s ease
+      &:hover
+        background: #0b5eb0
+        box-shadow: 2px 2px 20px 8px rgba(6, 74, 141, 0.35)
+      &:active
+        transform: translateY(4px)
+        box-shadow: 2px 2px 20px 8px rgba(55, 150, 248, 0.35)
+        background: #3e9af5
+    .header-arrow
+      margin: 0 auto
+.services
+  border-top: 3px solid #E10505
+  border-bottom: 3px solid #E10505
+  background: #19242A
+  padding: 73px 0 128px 0
+  .services-description
+    margin: 0 auto
+    color: #E1DFDF
+    font-size: 28px
+    text-align: center
+  .container
+    margin-top: 187px
+    display: flex
+    padding: 0 132px 0 255px
+    align-items: center
+    gap: 40px
+    .services-card
+      border-radius: 20px
+      background: rgba(248, 251, 254, 0.20)
+      box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.25)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 20px
+      height: 571px
+      font-family: "Hanuman", serif
+      padding: 0 30px
+      .services-card-box
+        width: 280px
+        height: 250px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 20px
+        background: #D6F8FF
+      .services-card-title
+        font-size: 28px
+        color: #EFEFEF
+      .services-card-description
+        font-size: 18px
+        color: #ECEBEB
+        width: 388px
+      .services-price-box
+        width: 388px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .services-price
+          font-size: 18px
+          color: white
+        .services-price-btn
+          height: 50px
+          width: 140px
+          padding: 10px
+          border-radius: 20px
+          border: 1px solid #7E7C7C
+          background: #0E6ECF
+          font-size: 20px
+          color: #F5F5F5
+          cursor: pointer
+          transition: transform 0.2s ease
+          &:hover
+            background: #0b5eb0
+            box-shadow: 2px 2px 20px 8px rgba(6, 74, 141, 0.35)
+          &:active
+            background: #3e9af5
+            box-shadow: 2px 2px 20px 8px rgba(55, 150, 248, 0.35)
+            transform: translateY(3px)
+
+.about
+  border-bottom: 3px solid #E10505
+  background: #19242A
+  font-family: "Hanuman", sans-serif
+  .container
+    display: flex
+    padding: 100px
+    justify-content: center
+    align-items: center
+    align-content: center
+    gap: 50px
+    flex-wrap: wrap
+    .about-person-card
+      text-align: center
+      padding: 20px
+      .about-nameOfDev
+        font-size: 28px
+        color: white
+        margin-top: 40px
+        margin-bottom: 12px
+      .about-specialityOfDev
+        font-size: 20px
+        color: white
+.footer
+  background: #181818
+  padding-bottom: 88px
+  .container
+    img
+      margin-top: 60px
+      margin-left: 100px
+      margin-bottom: 40px
+    .footer-info
+      display: flex
+      gap: 100px
+      margin-left: 60px
+      ul
+        display: flex
+        flex-direction: column
+        gap: 20px
+        &:nth-of-type(1)
+          display: flex
+          gap: 30px
+          flex-direction: row
+        &:nth-of-type(3)
+          margin-left: 30px
+          li
+            a
+              position: relative
+              span
+                position: absolute
+                bottom: -10
+                left: -30px
+        li
+          list-style-type: none
+          a
+            text-decoration: none
+            color: white
+            font-size: 18px
+
+
+
+
+
+
+
+

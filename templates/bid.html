@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Отправить Email</title>
+</head>
+<body>
+    <h1>Отправить Email</h1>
+    <form method="POST" action="/send_email">
+        <label for="tite">Получатель:</label>
+        <input type="email" name="tite" required><br>
+
+        <label for="intro">Тема:</label>
+        <input type="text" name="intro" required><br>
+
+        <label for="text">Сообщение:</label>
+        <textarea name="text" required></textarea><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
