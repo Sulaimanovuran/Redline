@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/services.css')}}">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -9,11 +9,11 @@
 <div class="wrapper">
     <div class="nav-bar">
         <nav class="nav">
-            <img src="img/nav-logo.svg" alt="">
+            <img src="{{url_for('static', filename='img/nav-logo.svg')}}" alt="">
             <ul>
-                <li><a href="services.html" class="header-nav-list">Услуги</a></li>
+                <li><a href="{{url_for('services')}}" class="header-nav-list">Услуги</a></li>
                 <li><a href="" class="header-nav-list">Контакты</a></li>
-                <li><a href="about.html" class="header-nav-list">О нас</a></li>
+                <li><a href="{{url_for('about')}}" class="header-nav-list">О нас</a></li>
             </ul>
         </nav>
     </div>
@@ -47,14 +47,14 @@
                     </p>
                     <span>от 150$</span>
                 </div>
-                <a href="form.html" class="price-button">Оставить заявку</a>
+                <a href="{{url_for('bid')}}" class="price-button">Оставить заявку</a>
             </div>
             <div class="price-card-box">
-                <a href="form.html" class="price-button">Оставить заявку</a>
+                <a href="{{url_for('bid')}}" class="price-button">Оставить заявку</a>
                 <div class="price-card">
                     <div class="price-card-top">
                         <div class="icon-block">
-                            <img src="img/services-icon-card.svg" alt="">
+                            <img src="{{url_for('static', filename='img/services-icon-card.svg')}}" alt="">
                         </div>
                         <ul class="price-list">
                             <li>IT-PRODUCT</li>
@@ -104,14 +104,14 @@
                     </p>
                     <span>от 150$</span>
                 </div>
-                <a href="form.html" class="price-button">Оставить заявку</a>
+                <a href="{{url_for('bid')}}" class="price-button">Оставить заявку</a>
             </div>
             <div class="price-card-box">
-                <a href="form.html" class="price-button">Оставить заявку</a>
+                <a href="{{url_for('bid')}}" class="price-button">Оставить заявку</a>
                 <div class="price-card">
                     <div class="price-card-top">
                         <div class="icon-block">
-                            <img src="img/services-icon-graphic.svg" alt="">
+                            <img src="{{url_for('static', filename='img/services-icon-graphic.svg')}}" alt="">
                         </div>
                         <ul class="price-list">
                             <li>GRAPHIC DESIGN</li>
@@ -134,7 +134,7 @@
     </section>
     <footer class="footer" id="footer">
         <div class="container">
-            <img src="img/footer-logo.svg" alt="">
+            <img src="{{url_for('static', filename='img/footer-logo.svg')}}" alt="">
             <div class="footer-info">
                 <ul class="footer-social-networks">
                     <li><a href="">
