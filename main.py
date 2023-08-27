@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mail import Mail, Message
+import smtplib
 
 app = Flask(__name__)
 
@@ -11,6 +12,7 @@ app.config['MAIL_USE_SSL'] = False  # Использовать SSL (True/False)
 app.config['MAIL_USERNAME'] = 'sulaimanovuran@gmail.com'  # Ваше имя пользователя
 app.config['MAIL_PASSWORD'] = 'cbpcsgueufapmjph'  # Ваш пароль
 app.config['MAIL_DEFAULT_SENDER'] = ('Your MOM', 'sulaimanovuran@gmail.com')  # Замените на ваши данные
+app.config['SECRET_KEY'] = 'kjdahfjehfuiwejhf83479ur0384943-7582930yr9hwepi'
 
 mail = Mail(app)
 
@@ -34,20 +36,22 @@ def bid():
     return render_template('bid.html')
 
 
-@app.route('/send_email', methods=['POST'])
+@app.route('/send_email', methods=['POST', 'GET'])
 def send_email():
-    recipient = request.form['tite']
-    subject = request.form['intro']
-    message_body = request.form['text']
-
+    print("hello")
+    recipient = request.form['name']
+    subject = request.form['mail']
+    
+    message_body = request.form['phone']
     message = Message(subject=subject, recipients=[recipient])
     message.body = message_body
 
     try:
         mail.send(message)  # Отправляем письмо
-        return "Письмо успешно отправлено!"
+        flash('Заявка отправлена', category='success')
     except Exception as e:
-        return f"Ошибка при отправке письма: {str(e)}"
+        flash('Ошибка отправки сообщения', category='error')
+    return render_template('bid.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
