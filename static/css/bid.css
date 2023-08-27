@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Hanuman", sans-serif;
+  font-weight: 400;
+  background-image: url(../img/services-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-bar {
+  background: rgba(249, 125, 125, 0.15);
+}
+
+nav {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  padding: 30px 70px;
+}
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav ul li {
+  list-style-type: none;
+}
+.nav ul li a {
+  font-size: 20px;
+  color: #EAEAEA;
+  text-decoration: none;
+}
+.nav ul li a:active {
+  text-decoration: underline;
+}
+.nav ul li a:visited {
+  text-decoration: underline;
+}
+
+.form {
+  border-top: 3px solid #E10505;
+  border-bottom: 3px solid #E10505;
+  background: rgba(25, 36, 42, 0.3);
+  padding-top: 40px;
+  padding-bottom: 86px;
+}
+.form .form-description {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.form .form-block {
+  border-radius: 50px;
+  background: rgba(26, 34, 38, 0.7);
+  -webkit-box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.25);
+  padding: 50px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  width: 680px;
+  margin: 0 auto;
+}
+.form .form-block img {
+  width: 200px;
+}
+.form .form-block .input {
+  position: relative;
+}
+.form .form-block .input input {
+  border-radius: 20px;
+  background: rgba(248, 251, 254, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: 60px;
+  padding: 10px 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  color: #AFAFAF;
+  font-size: 20px;
+}
+.form .form-block .input input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #AFAFAF;
+}
+.form .form-block .input input::-moz-placeholder {
+  font-size: 20px;
+  color: #AFAFAF;
+}
+.form .form-block .input input:-ms-input-placeholder {
+  font-size: 20px;
+  color: #AFAFAF;
+}
+.form .form-block .input input::-ms-input-placeholder {
+  font-size: 20px;
+  color: #AFAFAF;
+}
+.form .form-block .input input::placeholder {
+  font-size: 20px;
+  color: #AFAFAF;
+}
+.form .form-block .input input:focus {
+  outline: none;
+}
+.form .form-block .input input::-moz-selection {
+  background-color: transparent;
+}
+.form .form-block .input input::selection {
+  background-color: transparent;
+}
+.form .form-block .input span {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+.form .form-block a {
+  border-radius: 20px;
+  background: #0E6ECF;
+  -webkit-box-shadow: 2px 2px 20px 8px rgba(14, 110, 207, 0.35);
+          box-shadow: 2px 2px 20px 8px rgba(14, 110, 207, 0.35);
+  width: 500px;
+  height: 60px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer {
+  background: #181818;
+  padding-bottom: 88px;
+}
+.footer .container img {
+  margin-top: 60px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+.footer .container .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  margin-left: 60px;
+}
+.footer .container .footer-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.footer .container .footer-info ul:nth-of-type(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.footer .container .footer-info ul:nth-of-type(3) {
+  margin-left: 30px;
+}
+.footer .container .footer-info ul:nth-of-type(3) li a {
+  position: relative;
+}
+.footer .container .footer-info ul:nth-of-type(3) li a span {
+  position: absolute;
+  bottom: -10;
+  left: -30px;
+}
+.footer .container .footer-info ul li {
+  list-style-type: none;
+}
+.footer .container .footer-info ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}

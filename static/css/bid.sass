@@ -1,0 +1,134 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+p
+  word-wrap: break-word
+.container
+  width: 1440px
+  margin: 0 auto
+body
+  font-family: 'Hanuman', sans-serif
+  font-weight: 400
+  background-image: url(../img/services-img.jpeg)
+  background-repeat: no-repeat
+  background-size: cover
+.nav-bar
+  background: rgba(249, 125, 125, 0.15)
+nav
+  margin: 0 auto
+  width: 1440px
+.nav
+  display: flex
+  gap: 100px
+  padding: 30px 70px
+  ul
+    display: flex
+    gap: 60px
+    align-items: center
+    li
+      list-style-type: none
+      a
+        font-size: 20px
+        color: #EAEAEA
+        text-decoration: none
+        &:active
+          text-decoration: underline
+        &:visited
+          text-decoration: underline
+.form
+  border-top: 3px solid #E10505
+  border-bottom: 3px solid #E10505
+  background: rgba(25, 36, 42, 0.30)
+  padding-top: 40px
+  padding-bottom: 86px
+  .form-description
+    font-size: 24px
+    color: white
+    text-align: center
+    margin-bottom: 40px
+  .form-block
+    border-radius: 50px
+    background: rgba(26, 34, 38, 0.70)
+    box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.25)
+    padding: 50px 90px
+    display: flex
+    flex-direction: column
+    gap: 50px
+    width: 680px
+    margin: 0 auto
+    img
+      width: 200px
+    .input
+      position: relative
+      input
+        border-radius: 20px
+        background: rgba(248, 251, 254, 0.20)
+        display: flex
+        width: 500px
+        height: 60px
+        padding: 10px 20px
+        justify-content: center
+        align-items: center
+        border: none
+        color: #AFAFAF
+        font-size: 20px
+        &::placeholder
+          font-size: 20px
+          color: #AFAFAF
+        &:focus
+          outline: none
+        &::selection
+          background-color: transparent
+      span
+        position: absolute
+        right: 20px
+        top: 17px
+    a
+      border-radius: 20px
+      background: #0E6ECF
+      box-shadow: 2px 2px 20px 8px rgba(14, 110, 207, 0.35)
+      width: 500px
+      height: 60px
+      color: white
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 20px
+      text-decoration: none
+.footer
+  background: #181818
+  padding-bottom: 88px
+  .container
+    img
+      margin-top: 60px
+      margin-left: 100px
+      margin-bottom: 40px
+    .footer-info
+      display: flex
+      gap: 100px
+      margin-left: 60px
+      ul
+        display: flex
+        flex-direction: column
+        gap: 20px
+        &:nth-of-type(1)
+          display: flex
+          gap: 30px
+          flex-direction: row
+        &:nth-of-type(3)
+          margin-left: 30px
+          li
+            a
+              position: relative
+              span
+                position: absolute
+                bottom: -10
+                left: -30px
+        li
+          list-style-type: none
+          a
+            text-decoration: none
+            color: white
+            font-size: 18px
+
