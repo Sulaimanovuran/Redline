@@ -11,7 +11,7 @@ app.config['MAIL_USE_TLS'] = True  # Использовать TLS (True/False)
 app.config['MAIL_USE_SSL'] = False  # Использовать SSL (True/False)
 app.config['MAIL_USERNAME'] = 'sulaimanovuran@gmail.com'  # Ваше имя пользователя
 app.config['MAIL_PASSWORD'] = 'cbpcsgueufapmjph'  # Ваш пароль
-app.config['MAIL_DEFAULT_SENDER'] = ('Your MOM', 'sulaimanovuran@gmail.com')  # Замените на ваши данные
+app.config['MAIL_DEFAULT_SENDER'] = ('Заявка на получение услуг', 'sulaimanovuran@gmail.com')  # Замените на ваши данные
 app.config['SECRET_KEY'] = 'kjdahfjehfuiwejhf83479ur0384943-7582930yr9hwepi'
 
 mail = Mail(app)
@@ -39,12 +39,12 @@ def bid():
 @app.route('/send_email', methods=['POST', 'GET'])
 def send_email():
     print("hello")
-    recipient = request.form['name']
-    subject = request.form['mail']
+    company_name = request.form['name']
+    email = request.form['mail']
     
-    message_body = request.form['phone']
-    message = Message(subject=subject, recipients=[recipient])
-    message.body = message_body
+    phone_number = request.form['phone']
+    message = Message(subject=f'Заявка на получение услуг от {company_name}', recipients=['redline.marketing.kg@gmail.com'])
+    message.body = f'Адрес электронной почты {email}.\nНомер телефона: {phone_number}'
 
     try:
         mail.send(message)  # Отправляем письмо
